@@ -1,13 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Logging;
 using RouletteAPI.Models;
-using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace RouletteAPI.Controllers
 {
@@ -21,6 +17,7 @@ namespace RouletteAPI.Controllers
             this.context = context;
         }
         static List<Roulette> roulettes = new List<Roulette>();
+        static List<int> stakesResult = new List<int>();
         List<User> users = new List<User>(3){
             new User()
             {
@@ -107,7 +104,6 @@ namespace RouletteAPI.Controllers
                         stake.Number <= 36 &&
                         stake.Value < 10000)
                     {
-
                         return StatusCode(200);
                     }
                     else
@@ -126,6 +122,45 @@ namespace RouletteAPI.Controllers
             {
 
                 return StatusCode(500);
+            }
+        }
+        [HttpPost]
+        [Route("CloseRoulette")]
+        public List<int> CloseRoulette(int id)
+        {
+            try
+            {
+                if (roulettes.Any(i => i.Id == id))
+                {
+                    roulettes.Where(i => i.Id == id).FirstOrDefault(v => v.Status = false);
+                }
+                else
+                {
+
+                    return new List<int>(0);
+                }
+
+                return stakesResult;
+            }
+            catch
+            {
+
+                return new List<int>(0);
+            }
+        }
+        [HttpGet]
+        [Route("CloseRoulette")]
+        public List<Roulette> GetRoulettes()
+        {
+            try
+            {
+
+                return roulettes;
+            }
+            catch
+            {
+
+                return new List<Roulette>();
             }
         }
     }

@@ -7,6 +7,7 @@ C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\bin\Debug\netcorea
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\bin\Debug\netcoreapp3.1\RouletteAPI.runtimeconfig.dev.json
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\bin\Debug\netcoreapp3.1\RouletteAPI.dll
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\bin\Debug\netcoreapp3.1\RouletteAPI.pdb
+C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\obj\Debug\netcoreapp3.1\RouletteAPI.csprojAssemblyReference.cache
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\obj\Debug\netcoreapp3.1\RouletteAPI.AssemblyInfoInputs.cache
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\obj\Debug\netcoreapp3.1\RouletteAPI.AssemblyInfo.cs
 C:\Users\DESARROLLADOR 9\source\repos\RouletteAPI\RouletteAPI\obj\Debug\netcoreapp3.1\RouletteAPI.csproj.CoreCompileInputs.cache
